@@ -25,7 +25,7 @@
  * Multiple devices can use the same AppEUI, but each device has its own
  * DevEUI and AppKey.
  *
- * Do not forget to define the radio type correctly in config.h.
+ * Do not forget to define the radio type correctly in target-config.h.
  *
  *******************************************************************************/
 

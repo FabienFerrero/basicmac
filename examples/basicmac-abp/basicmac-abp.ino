@@ -25,7 +25,7 @@
  * AppSKey. Each device should have their own unique values for these
  * fields.
  *
- * Do not forget to define the radio type correctly in config.h.
+ * Do not forget to define the radio type correctly in target-config.h.
  *
  *******************************************************************************/
 
@@ -44,7 +44,7 @@ static const PROGMEM u1_t NWKSKEY[16] = { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0x
 static const u1_t PROGMEM APPSKEY[16] = { 0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6, 0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C };
 
 // LoRaWAN end-device address (DevAddr)
-static const u4_t DEVADDR = 0x03FF0001 ; // <-- Change this address for every node!
+static const u4_t DEVADDR = 0x00000000 ; // <-- Change this address for every node!
 
 // These callbacks are only used in over-the-air activation, so they are
 // left empty here (we cannot leave them out completely unless
@@ -310,4 +310,3 @@ void send_packet(){
 
     last_packet = millis();
 }
-
